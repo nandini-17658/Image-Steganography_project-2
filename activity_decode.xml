@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6600C9D4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Status text showing the current decoding status -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Status: Waiting for image selection"
+        android:textSize="16sp" />
+
+    <!-- Image view to show the selected image -->
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/white"
+        android:backgroundTint="#89E91EBA"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <!-- EditText for entering the secret key for decoding -->
+    <EditText
+        android:id="@+id/secret_key_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Enter Secret Key"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <!-- Button to choose the image to decode -->
+    <Button
+        android:id="@+id/choose_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4DE91EBA"
+        android:text="Choose Image" />
+
+    <!-- Button to trigger the decoding process -->
+    <Button
+        android:id="@+id/decode_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4DE91EBA"
+        android:text="Decode" />
+
+    <!-- TextView to display the decoded message -->
+    <TextView
+        android:id="@+id/message_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#EEEEEE"
+        android:backgroundTint="#7BFFEB3B"
+        android:padding="10dp"
+        android:text="Decoded Message will appear here"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+</LinearLayout>
